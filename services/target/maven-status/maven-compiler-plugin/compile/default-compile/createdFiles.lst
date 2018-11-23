@@ -1,0 +1,3 @@
+org\sobew\exceptions\ProfileUnauthorizationException.class
+org\sobew\exceptions\ProfileExpiredSessionException.class
+org\sobew\UserProfileService.class

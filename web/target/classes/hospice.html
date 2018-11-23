@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+
+<!-- The Modal -->
+<div id="id01" class="modal"></div>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="">
+    <div class="imgcontainer">
+      <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b class="psw">Password</b></label>
+	  <span class="psw"><a href="#" class="psw">Forgot password?</a></span>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+	  <input type="checkbox" onclick="myFunction()">Show Password
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+  <div class="modal-content-news animate">
+  </div>
+
+</body>
+</html>
