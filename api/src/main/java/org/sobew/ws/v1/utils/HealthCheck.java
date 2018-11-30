@@ -15,6 +15,7 @@ public class HealthCheck {
                   produces = {TEXT_PLAIN_VALUE, TEXT_HTML_VALUE, APPLICATION_JSON_VALUE})
   @ResponseBody
   public String heartBeat(){
+
     return HEALTHY_STATUS_MSG;
   }
 }
