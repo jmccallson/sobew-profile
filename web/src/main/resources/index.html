@@ -3,7 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/home.css">
-<script type="text/javascript" src="js/home.js"></script>
 </head>
 <body>
 
@@ -12,10 +11,11 @@
 	  <label class="welcomeBack">Welcome Back!</label>
 	</div>
 	<div>
-      <button type="button" onclick="" class="signinbtn">Sign In</button>
+      <button id="signInBtn" type="button" class="signinbtn"></button>
 	</div>
 	<div class="register">
-	  <span class="register"><a href="#" class="register">Create My Account</a></span>
+      <span>Don't have an account?</span>
+	  <span id="createMyAccount" class="register">Create An Account</span>
 	</div>
 	
   </div>
@@ -28,7 +28,7 @@
       <img src="images/alaska-marijuana-regulators-to-revisit-onsite-pot-use-debate.jpg" alt="Cannabis" class="cannabis">
     </div>
 	<div class="imgtext">
-	  <label>Cannabis Software</label>
+        <a href="topot"><label>Cannabis Software</label></a>
 	</div>
   </div>
   <div class="modal-content-news animate">
@@ -36,7 +36,7 @@
       <img src="images/hospice.jpg" alt="Hospice" class="hospice">
     </div>
 	<div class="imgtext">
-	  <label>Hospice Care Software</label>
+        <a href="hospice"><label>Hospice Care Software</label></a>
 	</div>
   </div>
   <div class="modal-content-gaming animate">
@@ -50,3 +50,4 @@
 
 </body>
 </html>
+<script language="JavaScript1.2" type="text/javascript" src="/js/login.js"></script>

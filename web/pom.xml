@@ -11,5 +11,11 @@
 
     <artifactId>sobew-profile-web</artifactId>
 
-
+    <dependencies>
+    <!-- Spring boot Thymeleaf -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    </dependency>
+    </dependencies>
 </project>

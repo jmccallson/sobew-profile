@@ -11,5 +11,20 @@
 
     <artifactId>sobew-profile-services</artifactId>
 
+    <dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+    </dependency>
+        <dependency>
+            <groupId>org.sobew</groupId>
+            <artifactId>sobew-profile-persistence</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

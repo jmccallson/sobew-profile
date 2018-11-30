@@ -3,7 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/login.css">
-<script type="text/javascript" src="js/login.js"></script>
 </head>
 <body>
 
@@ -17,14 +16,13 @@
     </div>
 
     <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b class="psw">Password</b></label>
+      <label for="usernameInput"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="usernameInput" id="usernameInput" required>
+      <label for="passwordInput"><b class="psw">Password</b></label>
 	  <span class="psw"><a href="#" class="psw">Forgot password?</a></span>
-      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      <input type="password" name="passwordInput" id="passwordInput" required>
 	  <input type="checkbox" onclick="myFunction()">Show Password
-      <button type="submit">Login</button>
+      <button id="loginBtn" type="submit"></button>
       <label>
         <input type="checkbox" name="remember"> Remember me
       </label>
@@ -39,3 +37,4 @@
 
 </body>
 </html>
+<script language="JavaScript1.2" type="text/javascript" src="hospice/js/login.js"></script>

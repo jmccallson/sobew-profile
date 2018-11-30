@@ -17,8 +17,8 @@
     <modules>
         <module>persistence</module>
         <module>services</module>
-        <module>api</module>
         <module>web</module>
+        <module>api</module>
     </modules>
 
     <properties>
@@ -28,6 +28,7 @@
         <flyway-core.version>4.2.0</flyway-core.version>
         <logstash-logback-encoder.version>5.2</logstash-logback-encoder.version>
         <jacoco-maven-plugin.version>0.8.2</jacoco-maven-plugin.version>
+        <jackson.version>2.9.7</jackson.version>
         <mockito-core.version>1.10.19</mockito-core.version>
         <nimbus.version>5.1</nimbus.version>
         <postgresql.version>42.2.4</postgresql.version>
