@@ -21,4 +21,11 @@ public class HomePageController {
     modelAndView.setViewName("topot/login.html");
     return modelAndView;
   }
+
+  @RequestMapping(value = "/patientprofile", method = RequestMethod.GET)
+  public ModelAndView patientProfile() {
+    ModelAndView modelAndView = new ModelAndView();
+    modelAndView.setViewName("hospice/patient_profile/patient_profile.html");
+    return modelAndView;
+  }
 }
