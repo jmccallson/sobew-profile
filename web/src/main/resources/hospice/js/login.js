@@ -35,16 +35,15 @@ loginBtn.addEventListener('click',
     function(){
         try{
             if(pswStr.length > 0 && usrnameStr.length > 0){
-                alert("signing in :)")
+
+               form = document.getElementById("load");
+               form.action = "patientprofile"
             }
-        } catch(ex){
+        }catch(ex){
             alert(ex.message)
         }
     }
 );
-
-
-
 
 
 
