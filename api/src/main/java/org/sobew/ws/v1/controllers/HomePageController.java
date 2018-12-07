@@ -15,10 +15,10 @@ public class HomePageController {
     return modelAndView;
   }
 
-  @RequestMapping(value = "/topot", method = RequestMethod.GET)
-  public ModelAndView topot() {
+  @RequestMapping(value = "/agent", method = RequestMethod.GET)
+  public ModelAndView agent() {
     ModelAndView modelAndView = new ModelAndView();
-    modelAndView.setViewName("topot/login.html");
+    modelAndView.setViewName("hospice/agent/agent_home.html");
     return modelAndView;
   }
 
@@ -28,4 +28,13 @@ public class HomePageController {
     modelAndView.setViewName("hospice/patient_profile/patient_profile.html");
     return modelAndView;
   }
+
+  @RequestMapping(value = "/topot", method = RequestMethod.GET)
+  public ModelAndView topot() {
+    ModelAndView modelAndView = new ModelAndView();
+    modelAndView.setViewName("topot/login.html");
+    return modelAndView;
+  }
+
+
 }

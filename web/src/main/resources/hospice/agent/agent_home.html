@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="hospice/css/agent.css">
+</head>
+<body>
+  <div class="header">
+      <div class="headertopleft"><img src="/images/elevation-logo.png" alt="home"></div>
+      <div class="personsname">Persons name</div>
+      <div class="headertopright"><div></div><div></div><div></div></div>
+  </div>
+  <div class="breadcrumbs">
+    <div class="topleft"><img src="/images/home_page.png" alt="home"> Home</div>
+    <div class="topright"></div>
+    <div class="multiselect">
+      <div class="selectBox" onclick="showCheckboxes()">
+          <div class="overSelect"><input type="text" placeholder="Select a patient" id="myInput" onkeyup="filterFunction()"></div>
+      </div>
+      <div id="checkboxes">
+          <label for="1234" onclick="buildTab('1234')">
+              <img src="/images/avatar2.png" alt="home" class="avatar"><span id="1234">Yogi bear</span></label>
+          <label for="5678" onclick="buildTab('5678')">
+              <img src="/images/avatar2.png" alt="home" class="avatar"><span id="5678">Jumping Jack</span></label>
+          <label for="9012" onclick="buildTab('9012')">
+              <img src="/images/avatar5.png" alt="home" class="avatar"><span id="9012">Long Term Patient</span></label>
+          <label for="3456" onclick="buildTab('3456')">
+              <img src="/images/avatar6.png" alt="home" class="avatar"><span id="3456">Who Is This Here</span></label>
+      </div>
+    </div>
+  </div>
+
+  <div id="container" class="container">
+      <button class="tablink" onclick="openPage('documentcontent', this, 'red')" id="document">Documents</button>
+      <!--<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+      <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+      <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+      -->
+      <div id="documentcontent" class="tabcontent">
+          <h3>Home</h3>
+          <p>Home is where the heart is..</p>
+      </div>
+
+      <div id="documentcontent5678" class="tabcontent">
+          <h3>News</h3>
+          <p>Some news this fine day!</p>
+      </div>
+
+      <div id="documentcontent9012" class="tabcontent">
+          <h3>Contact</h3>
+          <p>Get in touch, or swing by for a cup of coffee.</p>
+      </div>
+
+      <div id="documentcontent3456" class="tabcontent">
+          <h3>About</h3>
+          <p>Who we are and what we do.</p>
+      </div>
+  </div>
+</body>
+</html>
+<script language="JavaScript1.2" type="text/javascript" src="hospice/js/agent.js"></script>
+<script language="JavaScript1.2" type="text/javascript" src="hospice/js/html/tabs.js"></script>
